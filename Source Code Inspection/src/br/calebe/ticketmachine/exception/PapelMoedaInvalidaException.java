@@ -6,4 +6,10 @@ package br.calebe.ticketmachine.exception;
  */
 public class PapelMoedaInvalidaException extends Exception {
     
+    private static final String PapelInvalido="Papel moeda invalida";
+    
+    public PapelMoedaInvalidaException(){
+        super(PapelInvalido);
+    }
+    
 }
