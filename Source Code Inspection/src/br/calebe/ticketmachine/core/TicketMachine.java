@@ -37,10 +37,7 @@ public class TicketMachine {
         return saldo;
     }
 
-    public Iterator<Integer> getTroco() {
-        return null;
-    }
-
+    
     public String imprimir()  {
         String result = "*****************\n";
         result += "*** R$ " + saldo + ",00 ****\n";
