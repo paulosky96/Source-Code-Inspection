@@ -43,19 +43,12 @@ class Troco {
 
         @Override
         public PapelMoeda next() {
-            PapelMoeda ret = null;
-            for (int i = 6; i >= 0 && ret != null; i++) {
-                if (papeisMoeda[i] != null) {
-                    ret = papeisMoeda[i];
-                    papeisMoeda[i] = null;
-                }
-            }
-            return ret;
+           return getIterator().next();
         }
 
         @Override
         public void remove() {
-            next();
+            getIterator().remove();
         }
     }
 }
